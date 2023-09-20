@@ -19,7 +19,7 @@ It clearly says the numbers in the lookup table are CPU cycles **NOT** APU cycle
 That means the timer should be decreased 2 when the timer is clocked. For example,
 if you have code for timers like this,
 
-```C++
+```cpp
 void APU::clock_timers()
 {
     if (clock_ % 2 == 0) {
@@ -37,7 +37,7 @@ the dmc timer is clocked every other CPU cycle. So in the `clock_dmc_timer()`,
 we have to decrease timer count by 2. Similarly, the noise period needs to be
 decreased by 2 in the `clock_noise_timer()`.
 
-```C++
+```cpp
 static void clock_dmc_timer(DmcChannel &dmc)
 {
     if (dmc.timer == 0) {
