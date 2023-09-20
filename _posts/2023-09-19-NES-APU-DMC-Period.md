@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  "NES APU DMC Period"
+author: Hiroshi Tsubokawa
+category: NES Emulator
 ---
 
 # DMC Channel in Kung Fu ("スパルタンX" in Japanese title)
