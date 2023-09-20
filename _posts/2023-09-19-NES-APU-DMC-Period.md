@@ -9,7 +9,7 @@ category: NES Emulator
 
 I have been struggling with making DMC channel work for my NES Emulator.
 The channel sounded low pitch and low volume. I overlooked the very
-important thing for timer period described in NES DEV Wiki.
+important thing for the timer period described in NES DEV Wiki.
 
 > The rate determines for how many CPU cycles happen between changes in the output level
 > during automatic delta-encoded sample playback. For example, on NTSC (1.789773 MHz),
@@ -35,7 +35,7 @@ void APU::clock_timers()
 }
 ```
 
-the dmc timer is clocked every other CPU cycle. So in the `clock_dmc_timer()`,
+The dmc timer is clocked every other CPU cycle. So in the `clock_dmc_timer()`,
 we have to decrease timer count by 2. Similarly, the noise period needs to be
 decreased by 2 in the `clock_noise_timer()`.
 
@@ -59,9 +59,9 @@ static void clock_dmc_timer(DmcChannel &dmc)
 ```
 
 I felt the noise sounded a little
-different than other solid emulators but I just leave it as it at the beginning.
-It was harder to listen apart the noise sounds, but the DMC channel in "Kung Fu"
-has been made a big difference by the period bug.
+different than other solid emulators but I just left it as is at the beginning.
+It was hard to listen to the difference in the noise channel, but the DMC channel in "Kung Fu"
+made a big difference with the period bug.
 
 Check my emulator's code if you like. Hope this help your NES development!
 [Famulator Famicom/NES Emulator](https://github.com/tsubo164/Famulator)
