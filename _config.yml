@@ -2,7 +2,6 @@ theme: jekyll-theme-minimal
 title: NES Emulator Development Blog
 logo: /assets/img/smb_grid.png
 description: Bookmark this to keep an eye on my project updates!
-[Famulator Famicom/NES Emulator](https://github.com/tsubo164/Famulator)
 google_analytics:
 github:
   is_project_page: false
