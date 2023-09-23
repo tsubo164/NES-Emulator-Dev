@@ -8,7 +8,7 @@ This is my blog site for NES Emulator that I have been writing.
 <ul>
   {% for post in site.posts %}
     <li>
-      <a href="{{ post.url | absolute_url }}">{{ post.title }}</a>
+      {{ post.date }} <a href="{{ post.url | absolute_url }}">{{ post.title }}</a>
     </li>
   {% endfor %}
 </ul>

@@ -2,10 +2,8 @@
 layout: post
 title:  "NES APU DMC Period"
 author: Hiroshi Tsubokawa
-category: NES Emulator
+tag: NES Emulator
 ---
-
-# DMC Channel in Kung Fu ("スパルタンX" in Japanese title)
 
 I have been struggling with making DMC channel work for my NES Emulator.
 The channel sounded low pitch and low volume. I overlooked the very

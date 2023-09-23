@@ -2,7 +2,7 @@
 layout: post
 title:  "Family Computer 40th Anniversary"
 author: Hiroshi Tsubokawa
-category: NES Emulator
+tag: NES Emulator
 ---
 
 This year 2023 is the 40th anniversary for Family Computer
