@@ -11,7 +11,7 @@ characters can come in the frame at once. I wondered why they're not flickering
 caused by 8 sprite limit in a scanline. One character obviously uses at least
 two sprit in width.
 
-![Kung Fu tiles and sprites][{{ site.baseurl }}/assets/img/2023-09-23-01.png]
+![Kung Fu tiles and sprites]({{ site.baseurl }}/assets/img/2023-09-23-01.png)
 When I show background grid and sprite boxes, I saw the main character is rendered
 in background. It is always placed at center of the frame except for the beginning
 and end of stages. During the time, the main character is still in the background
